@@ -1,0 +1,15 @@
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\obj\Debug\net6.0\Csharp_Project.csproj.AssemblyReference.cache
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\obj\Debug\net6.0\Csharp_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\obj\Debug\net6.0\Csharp_Project.AssemblyInfoInputs.cache
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\obj\Debug\net6.0\Csharp_Project.AssemblyInfo.cs
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\obj\Debug\net6.0\Csharp_Project.csproj.CoreCompileInputs.cache
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\bin\Debug\net6.0\Csharp_Project.exe
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\bin\Debug\net6.0\Csharp_Project.deps.json
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\bin\Debug\net6.0\Csharp_Project.runtimeconfig.json
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\bin\Debug\net6.0\Csharp_Project.dll
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\bin\Debug\net6.0\Csharp_Project.pdb
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\obj\Debug\net6.0\Csharp_Project.dll
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\obj\Debug\net6.0\refint\Csharp_Project.dll
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\obj\Debug\net6.0\Csharp_Project.pdb
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\obj\Debug\net6.0\Csharp_Project.genruntimeconfig.cache
+C:\Users\godgj\OneDrive\바탕 화면\Jun-C\GitHub\Study_CodingTest\Csharp_Project\Csharp_Project\obj\Debug\net6.0\ref\Csharp_Project.dll
