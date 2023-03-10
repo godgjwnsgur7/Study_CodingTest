@@ -16,25 +16,24 @@ namespace Csharp_Project.Programmers.Lv2
     1 ≤ x ≤ y ≤ 1,000,000
     1 ≤ n < y
     */
-    public class ConvertingNumbers
+    internal class ConvertingNumbers
     {
-        public static void Main(string[] args)
+        public static void Main_ConvertingNumbers(string[] args)
         {
-            ConvertingNumbers solution = new();
-
-            Console.WriteLine($"기댓값 : 2  / 결과 : {solution.Solution(10, 40, 5)}");
-            Console.WriteLine($"기댓값 : 1  / 결과 : {solution.Solution(10, 40, 30)}");
-            Console.WriteLine($"기댓값 : -1 / 결과 : {solution.Solution(2, 5, 4)}");
+            Console.WriteLine($"기댓값 : 2  / 결과 : {Solution(10, 40, 5)}");
+            Console.WriteLine($"기댓값 : 1  / 결과 : {Solution(10, 40, 30)}");
+            Console.WriteLine($"기댓값 : -1 / 결과 : {Solution(2, 5, 4)}");
         }
 
         // 풀이시도1. 세 가지 연산 중에 목표 값과 가장 가까워지는 수를 찾아 연산하는 방식을 채택
         // -> 가장 가까워진다고 해서 빠르게 도달할 수 있는 것이 아님
 
-        // 풀이시도2. 모든 경우의 수를 찾아야 하므로 2개의 자료구조를 사용하는 방식 채택
+        // 풀이시도2. (힌트. HashSet)
+        // 모든 경우의 수를 찾아야 하므로 2개의 자료구조를 사용하는 방식 채택
         // - 중복된 값이 있을 경우 같은 연산이 되므로 HashSet을 사용하여 중복 방지
         // -> currSet(값 체크) <-> nextSet(연산하여 저장)
 
-        public int Solution(int x, int y, int n)
+        public static int Solution(int x, int y, int n)
         {
             int answer = 0;
 
