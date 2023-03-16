@@ -35,7 +35,7 @@ namespace Csharp_Project.Programmers.Lv2
 
     internal class DefenseGame
     {
-        public static void Main(string[] args)
+        public static void Main_DefenseGame(string[] args)
         {
             int[] testIndex = { 4, 2, 4, 5, 3, 3, 1 };
             int[] testIndex2 = { 3, 3, 3, 3 };
