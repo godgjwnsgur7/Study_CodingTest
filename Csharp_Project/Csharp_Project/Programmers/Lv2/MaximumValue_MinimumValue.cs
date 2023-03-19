@@ -18,7 +18,7 @@ namespace Csharp_Project.Programmers.Lv2
 
     internal class MaximumValue_MinimumValue
     {
-        public static void Main(string[] args)
+        public static void Main_MaximumValue_MinimumValue(string[] args)
         {
             Console.WriteLine($"기댓값 : 1 4  / 결과 : {Solution("1 2 3 4")}");
             Console.WriteLine($"기댓값 : -4 -1  / 결과 : {Solution("-1 -2 -3 -4")}");
@@ -36,7 +36,7 @@ namespace Csharp_Project.Programmers.Lv2
 
             string[] words = s.Split(' ');   
             
-            List<int> values = new List<int>();
+            List<int> values = new();
             
             for(int i = 0; i < words.Length; i++)
                 values.Add(int.Parse(words[i]));
