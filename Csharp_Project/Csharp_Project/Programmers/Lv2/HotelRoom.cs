@@ -36,8 +36,7 @@ namespace Csharp_Project.Programmers.Lv2
         }
 
         // 풀이시도 1
-        // 일단 비교하기 편하게 하기 위해서 int형 배열로 변경
-        // 
+        // 나중에 풀자. 너무 어렵다.
 
         public static int Solution(string[,] book_time)
         {
