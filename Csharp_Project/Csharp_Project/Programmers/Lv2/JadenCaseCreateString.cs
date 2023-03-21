@@ -21,7 +21,7 @@ namespace Csharp_Project.Programmers.Lv2
         공백문자가 연속해서 나올 수 있습니다.
         */
 
-        public static void Main(string[] args)
+        public static void Main_JadenCaseCreateString(string[] args)
         {
             Console.WriteLine($"기댓값 : 3people Unfollowed Me / 결과 : {Solution("3people unFollowed me")}");
             Console.WriteLine($"기댓값 : For The Last Week  / 결과 : {Solution("for the last week")}");
