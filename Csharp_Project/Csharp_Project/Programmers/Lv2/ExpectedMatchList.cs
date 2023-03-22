@@ -29,7 +29,7 @@ namespace Csharp_Project.Programmers.Lv2
         A, B : N 이하인 자연수 (단, A ≠ B 입니다.)
         */
 
-        public static void Main(string[] args)
+        public static void Main_ExpectedMatchList(string[] args)
         {
             Console.WriteLine($"기댓값 : 3 / 결과 : {Solution(8, 4, 7)}");
         }
@@ -40,9 +40,6 @@ namespace Csharp_Project.Programmers.Lv2
         public static int Solution(int n, int a, int b)
         {
             int answer = 0;
-
-            // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-            System.Console.WriteLine("Hello C#");
 
             return answer;
         }
