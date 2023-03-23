@@ -29,7 +29,7 @@ namespace Csharp_Project.Programmers.Lv2
         A, B : N 이하인 자연수 (단, A ≠ B 입니다.)
         */
 
-        public static void Main(string[] args)
+        public static void Main_ExpectedMatchList(string[] args)
         {
             Console.WriteLine($"기댓값 : 3 / 결과 : {Solution(8, 4, 7)}");
         }
