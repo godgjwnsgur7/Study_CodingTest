@@ -19,7 +19,6 @@ namespace Csharp_Project.Programmers.Lv2
         arr의 원소는 100 이하인 자연수입니다.
         */
 
-
         public static void Main_MinimumCommonMultiple(string[] args)
         {
             int[] test1 = new int[] { 2, 6, 8, 14 };

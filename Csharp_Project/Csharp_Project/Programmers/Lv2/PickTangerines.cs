@@ -26,7 +26,6 @@ namespace Csharp_Project.Programmers.Lv2
         1 ≤ tangerine의 원소 ≤ 10,000,000
         */
 
-
         public static void Main_PickTangerines(string[] args)
         {
             int[] test1 = new int[] { 1, 3, 2, 5, 4, 5, 2, 3 };
