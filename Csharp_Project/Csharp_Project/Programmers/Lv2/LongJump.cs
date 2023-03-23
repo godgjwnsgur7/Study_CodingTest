@@ -25,7 +25,7 @@ namespace Csharp_Project.Programmers.Lv2
         n은 1 이상, 2000 이하인 정수입니다.
         */
 
-        public static void Main(string[] args)
+        public static void Main_LongJump(string[] args)
         {
             Console.WriteLine($"기댓값 : 1 / 결과 : {Solution(1)}");
             Console.WriteLine($"기댓값 : 1 / 결과 : {Solution(2)}");

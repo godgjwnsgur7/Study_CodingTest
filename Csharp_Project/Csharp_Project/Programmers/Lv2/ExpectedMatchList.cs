@@ -29,19 +29,30 @@ namespace Csharp_Project.Programmers.Lv2
         A, B : N 이하인 자연수 (단, A ≠ B 입니다.)
         */
 
-        public static void Main_ExpectedMatchList(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine($"기댓값 : 3 / 결과 : {Solution(8, 4, 7)}");
         }
 
-        // 풀이시도1.
-        // https://school.programmers.co.kr/learn/courses/30/lessons/12985
+        // Memo
+        // 다음 대진번호를 알아내는 공식 -> (currNum / 2) + (currNum % 2)
 
         public static int Solution(int n, int a, int b)
         {
-            int answer = 0;
+            int rountCount = 0;
 
-            return answer;
+            while(true)
+            {
+                rountCount++; // 다음 라운드 시작
+
+                a = (a / 2) + (a % 2); // a의 다음 대진번호
+                b = (b / 2) + (b % 2); // b의 다음 대진번호
+
+                if (a == b) // 만약 다음 대진번호가 같다면 만났었던 것
+                    break;
+            }
+        
+            return rountCount;
         }
     }
 }
