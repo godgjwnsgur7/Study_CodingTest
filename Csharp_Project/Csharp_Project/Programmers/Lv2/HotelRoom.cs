@@ -36,11 +36,36 @@ namespace Csharp_Project.Programmers.Lv2
         }
 
         // 풀이시도 1
-        // 나중에 풀자. 너무 어렵다.
+        // 1. 퇴실 시간을 기준으로 10분 후부터 사용이 가능하므로, 모든 경우의 퇴실시간에 10분을 더함.
+        // 2. 00시부터 23시 59분까지의 1분 단위의 모든 시간을 체크함 ( x = 체크할 시간 )
+        // 체크 내용 - 입실시간 < x < 퇴실시간 ( 조건 만족 갯수 파악 )
 
         public static int Solution(string[,] book_time)
         {
             int answer = 0;
+            int[] useRoomTimeCount = new int[1450];
+
+            int startTime, endTime;
+            string[] startTimeStr, endTimeStr;
+
+            for(int i = 0; i < book_time.GetLength(0); i++)
+            {
+                startTimeStr = book_time[i, 0].Split(":");
+                endTimeStr = book_time[i, 1].Split(":");
+
+                startTime = int.Parse(startTimeStr[0]) * 60 + int.Parse(startTimeStr[1]);
+                endTime = int.Parse(endTimeStr[0]) * 60 + int.Parse(endTimeStr[1]) + 10;
+
+                for (int j = startTime; j < endTime; j++)
+                    useRoomTimeCount[j]++;
+            }
+
+            for(int i = 0; i < useRoomTimeCount.Length; i++)
+            {
+                if(answer < useRoomTimeCount[i])
+                    answer = useRoomTimeCount[i];
+            }    
+
             return answer;
         }
     }
