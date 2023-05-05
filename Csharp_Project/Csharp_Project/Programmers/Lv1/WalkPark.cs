@@ -55,7 +55,6 @@ namespace Csharp_Project.Programmers.Lv1
             string[] test3 = new string[] { "OSO", "OOO", "OXO", "OOO" };
             string[] test03 = new string[] { "E 2", "S 3", "W 1" };
 
-
             Console.WriteLine($"기댓값 : [4, 3] / 결과 : [{Solution(test1, test01)[0]}, {Solution(test1, test01)[1]}]");
             Console.WriteLine($"기댓값 : [4, 3] / 결과 : [{Solution(test2, test02)[0]}, {Solution(test2, test02)[1]}]");
             Console.WriteLine($"기댓값 : [4, 3] / 결과 : [{Solution(test3, test03)[0]}, {Solution(test3, test03)[1]}]");
@@ -66,8 +65,11 @@ namespace Csharp_Project.Programmers.Lv1
 
         public static int[] Solution(string[] park, string[] routes)
         {
-            int[] answer = new int[] { };
-            return answer;
+            int[] currPosition = new int[2];
+            
+
+
+            return currPosition;
         }
     }
 }

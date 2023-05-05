@@ -9,6 +9,8 @@ namespace Csharp_Project.Programmers.Lv2
     internal class FindingPrimeNumber
     {
         /* 소수 찾기
+        https://school.programmers.co.kr/learn/courses/30/lessons/42839?language=csharp
+
         한자리 숫자가 적힌 종이 조각이 흩어져있습니다. 
         흩어진 종이 조각을 붙여 소수를 몇 개 만들 수 있는지 알아내려 합니다.
 
@@ -40,8 +42,7 @@ namespace Csharp_Project.Programmers.Lv2
         // 맨 끝 인덱스를 하나씩 삭제하면서 모두 set에 담음
         // -> 문제 : 최대 자릿수로 모든 경우의 수를 뽑을 때, 예외상황이 많음 / 부분실패
 
-        // 시도2.
-        // -> 도저히 모르겠음. 킵
+        // 완전탐색 알고리즘에 대한 이해 등이 필요할 거 같은데, 일단 미룸....
 
         public static int Solution(string numbers)
         {
@@ -49,26 +50,7 @@ namespace Csharp_Project.Programmers.Lv2
             StringBuilder sb = new StringBuilder(numbers);
             HashSet<int> set = new HashSet<int>();
 
-            StringBuilder tempSb;
-            char tempChar;
 
-            for (int i = 0; i < sb.Length; i++)
-            {
-                // 0번째 인덱스를 끝으로 한칸씩 보냄
-                for(int j = 1; j < sb.Length; j++)
-                {
-                    tempSb = new StringBuilder(sb.ToString());
-                    while(tempSb.Length > 0)
-                    {
-                        set.Add(int.Parse(tempSb.ToString()));
-                        tempSb.Length--;
-                    }
-
-                    tempChar = sb[j];
-                    sb[j] = sb[j - 1];
-                    sb[j - 1] = tempChar;
-                }
-            }
 
             // 소수 판독기에 넣어서 카운트
             foreach(int num in set)

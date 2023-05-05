@@ -23,7 +23,7 @@ namespace Csharp_Project.Programmers.Lv2
         예를 들어 진도율이 95%인 작업의 개발 속도가 하루에 4%라면 배포는 2일 뒤에 이루어집니다.
         */
 
-        public static void Main(string[] args)
+        public static void Main_FunctionalDevelopment(string[] args)
         {
             int[] testProgresses1 = { 93, 30, 55 };
             int[] testSpeeds1 = { 1, 30, 5 };

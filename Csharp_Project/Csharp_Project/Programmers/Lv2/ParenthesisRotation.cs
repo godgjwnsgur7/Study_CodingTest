@@ -9,6 +9,8 @@ namespace Csharp_Project.Programmers.Lv2
     internal class ParenthesisRotation
     {
         /* 괄호 회전하기
+        https://school.programmers.co.kr/learn/courses/30/lessons/76502
+        
         다음 규칙을 지키는 문자열을 올바른 괄호 문자열이라고 정의합니다.
 
         (), [], {} 는 모두 올바른 괄호 문자열입니다.
@@ -26,7 +28,7 @@ namespace Csharp_Project.Programmers.Lv2
         s의 길이는 1 이상 1,000 이하입니다.
        */
 
-        public static void Main_ParenthesisRotation(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine($"기댓값 : 3 / 결과 : {Solution("[](){}")}");
             Console.WriteLine($"기댓값 : 2 / 결과 : {Solution("}]()[{")}");
@@ -44,10 +46,8 @@ namespace Csharp_Project.Programmers.Lv2
         // 예외 상황으로 { ( } ) 이런 경우에도 잘못된 괄호인데, 맞는 괄호처럼 인식해버림.
         
         // 풀이시도2.
-        // 괄호를 만났을 때, 다음 괄호를 찾고, 안에 있는 괄호가 올바른 지 판단하는 것을 반복해야 할 듯
-        // 
+        // 스택을 떠올리면 바로 해결
        
-
         public static int Solution(string s)
         {
             StringBuilder sb = new(s);
@@ -55,16 +55,47 @@ namespace Csharp_Project.Programmers.Lv2
 
             for(int i = 0; i < sb.Length; i++)
             {
-                
+                if (IsCorrectParentheses(sb.ToString()))
+                    answer++;
 
-                Console.WriteLine(sb.ToString()); 
-
-                // 문자열 회전 1회
+                // 문자열 회전
                 sb.Append(sb[0]); // 맨 앞의 인덱스를 뒤에 추가
                 sb.Remove(0, 1); // 맨 앞의 인덱스 삭제
             }
 
             return answer;
+        }
+
+        // 올바른 괄호 판단
+        public static bool IsCorrectParentheses(string s)
+        {
+            Stack<Char> stack = new Stack<char>();
+
+            for(int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == '(' || s[i] == '{' || s[i] == '[')
+                    stack.Push(s[i]);
+                else if (stack.Count == 0)
+                    return false;
+
+                switch (s[i])
+                {
+                    case ')':
+                        if (stack.Pop() != '(')
+                            return false;
+                        break;
+                    case '}':
+                        if (stack.Pop() != '{')
+                            return false;
+                        break;
+                    case ']':
+                        if (stack.Pop() != '[')
+                            return false;
+                        break;
+                }
+            }
+
+            return stack.Count == 0;
         }
     }
 }
