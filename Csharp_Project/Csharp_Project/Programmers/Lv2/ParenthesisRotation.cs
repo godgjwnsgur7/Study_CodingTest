@@ -28,7 +28,7 @@ namespace Csharp_Project.Programmers.Lv2
         s의 길이는 1 이상 1,000 이하입니다.
        */
 
-        public static void Main(string[] args)
+        public static void Main_ParenthesisRotation(string[] args)
         {
             Console.WriteLine($"기댓값 : 3 / 결과 : {Solution("[](){}")}");
             Console.WriteLine($"기댓값 : 2 / 결과 : {Solution("}]()[{")}");
