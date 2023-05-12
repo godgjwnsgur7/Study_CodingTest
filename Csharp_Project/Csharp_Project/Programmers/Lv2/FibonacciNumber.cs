@@ -42,7 +42,7 @@ namespace Csharp_Project.Programmers.Lv2
         public static int Solution(int n)
         {
             int count = 2; // 2부터 시작
-            Queue<int> q = new();
+            Queue<int> q = new Queue<int>();
 
             int first, second;
 

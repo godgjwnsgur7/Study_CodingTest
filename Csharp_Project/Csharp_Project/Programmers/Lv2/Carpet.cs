@@ -9,6 +9,8 @@ namespace Csharp_Project.Programmers.Lv2
     internal class Carpet
     {
         /* 숫자 변환하기
+        https://school.programmers.co.kr/learn/courses/30/lessons/42842
+
         Leo는 카펫을 사러 갔다가 아래 그림(링크)과 같이 중앙에는 노란색으로 칠해져 있고 
         테두리 1줄은 갈색으로 칠해져 있는 격자 모양 카펫을 봤습니다.
         https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/b1ebb809-f333-4df2-bc81-02682900dc2d/carpet.png
@@ -42,16 +44,16 @@ namespace Csharp_Project.Programmers.Lv2
         {
             int[] answer = new int[2]; // 가로, 세로
 
-            int add = (brown / 2) + 2; // 가로 + 세로
+            int addValue = (brown / 2) + 2; // 가로 + 세로
             int xy = brown + yellow; // 가로 * 세로
 
             int x, y;
 
-            for(int i = 1; i < add - 1; i++)
+            for(int i = 1; i < addValue - 1; i++)
             {
                 // 더한 식의 조건을 적용
                 x = i;
-                y = add - x;
+                y = addValue - x;
 
                 // 곱한 식의 조건을 만족하는 지 확인
                 if (xy == x * y)
@@ -64,7 +66,11 @@ namespace Csharp_Project.Programmers.Lv2
             }
 
             if(answer[0] < answer[1])
-                (answer[0], answer[1]) = (answer[1], answer[0]);
+            {
+                int tempNum = answer[1];
+                answer[1] = answer[0];
+                answer[0] = tempNum;
+            }
 
             return answer;
         }

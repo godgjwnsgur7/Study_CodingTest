@@ -9,6 +9,7 @@ namespace Csharp_Project.Programmers.Lv2
     internal class DefenseGame
     {
         /* 디펜스 게임
+        https://school.programmers.co.kr/learn/courses/30/lessons/142085
         준호는 요즘 디펜스 게임에 푹 빠져 있습니다.
         디펜스 게임은 준호가 보유한 병사 n명으로 연속되는 적의 공격을 순서대로 막는 게임입니다.
         디펜스 게임은 다음과 같은 규칙으로 진행됩니다.

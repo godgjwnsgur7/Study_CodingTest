@@ -50,7 +50,7 @@ namespace Csharp_Project.Programmers.Lv2
        
         public static int Solution(string s)
         {
-            StringBuilder sb = new(s);
+            StringBuilder sb = new StringBuilder(s);
             int answer = 0;
 
             for(int i = 0; i < sb.Length; i++)

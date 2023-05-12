@@ -9,6 +9,7 @@ namespace Csharp_Project.Programmers.Lv2
     internal class ExpectedMatchList
     {
         /* 예상 대진표
+        https://school.programmers.co.kr/learn/courses/30/lessons/12985
         △△ 게임대회가 개최되었습니다. 이 대회는 N명이 참가하고, 토너먼트 형식으로 진행됩니다.
         N명의 참가자는 각각 1부터 N번을 차례대로 배정받습니다. 
         그리고, 1번↔2번, 3번↔4번, ... , N-1번↔N번의 참가자끼리 게임을 진행합니다. 
