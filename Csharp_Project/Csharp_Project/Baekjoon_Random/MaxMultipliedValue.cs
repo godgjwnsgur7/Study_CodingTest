@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// 최대 곱
+/// https://www.acmicpc.net/problem/1500
+/// </summary>
+
 namespace Csharp_Project.Baekjoon_Random
 {
-    /// <summary>
-    /// 최대 곱
-    /// https://www.acmicpc.net/problem/1500
-    /// </summary>
     internal class MaxMultipliedValue
     {
         public static void Main_MaxMultipliedValue(string[] args)
